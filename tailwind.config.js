@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
@@ -235,6 +236,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Inter var',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
