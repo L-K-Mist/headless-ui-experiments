@@ -1,28 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <BasePopover />
-    <base-right-slideover>
-      <div>
-        <p>
-          I like how we can really decide exactly how we want stuff to be
-          displayed.
-        </p>
-      </div>
-    </base-right-slideover>
+    <Report/>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
-import BasePopover from "@/components/BasePopover.vue";
-import BaseRightSlideover from "@/components/BaseRightSlideover.vue";
+import Report from "@/components/Report"
 
 export default defineComponent({
   name: "Home",
   components: {
-    BasePopover,
-    BaseRightSlideover,
+    Report
   },
 });
 </script>
@@ -30,5 +19,15 @@ export default defineComponent({
 <style>
 p {
   color: hsl(217deg 4% 40%);
+}
+
+.form {
+  border: 1px dotted blue;
+  height: 80vh;
+}
+
+.form-group {
+  border: 1px dotted blue;
+  height: 70vh;
 }
 </style>

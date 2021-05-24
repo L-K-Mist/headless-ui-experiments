@@ -108,11 +108,11 @@ export default defineComponent({
     watch(
       open,
       (isOpen) => {
-        setTimeout(() => {
-          if (!isOpen) {
-            open.value = true;
-          }
-        }, 2000);
+        // setTimeout(() => {
+        //   if (!isOpen) {
+        //     open.value = true;
+        //   }
+        // }, 2000);
       }
     );
     return {
