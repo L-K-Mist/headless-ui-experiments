@@ -27,7 +27,7 @@
       </div>
     </div>
     <div v-if="!formLoading" class="form">
-      <div class="form-group" v-for="group in form" :key="group.unique_name">
+      <div class="form-group" v-for="(group, index) in form" :key="group.unique_name">
         <h3 class="text-lg leading-6 font-medium text-gray-900">
           {{ group.unique_name }}
         </h3>
@@ -46,7 +46,7 @@
                 <input
                   type="text"
                   name="username"
-                  id="username"
+                  :id="'username-' + index"
                   autocomplete="username"
                   class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-md sm:text-sm border-gray-300"
                 />
